@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="msgBox" class="m-msg">
+		<div class="m-msgbox">
+			<i class="u-icon u-close"></i>
+			<h3>请输入笔记本名</h3>
+			<input type="text" maxlength="6" placeholder="我的笔记本">
+			<button>提交</button>
+		</div>
+	</div>
+	<div class="g-container">
+		<div class="g-notetype tri">
+			<div class="m-head">
+				<h3>笔记本</h3>
+			</div>
+			<div id="noteType"class="m-content">
+				<ul>
+					<li><a href="#box0">默认笔记本</a><i class="u-icon u-delete"></i></li>
+					<li><i class="u-icon u-add"></i></li>
+				</ul>
+			</div>
+			<div class="m-foot"></div>
+		</div>
+		<div class="g-notelist tri">
+			<div class="m-head">
+				<h3>笔记</h3>
+				<span><i class="u-icon u-write"></i><i>新建笔记</i></span>
+			</div>
+			<div class="clearfix"></div>
+			<div id="notelist" class="m-content">
+				<div class="box" id="box0">
+					<ul id="listcont"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="g-edit tri">
+			<div class="m-head">
+				<span>请输入笔记</span>
+				<button id="editbutt">保存</button>
+			</div>
+			<div class="m-content">
+				<label for="edittitle">标题</label><input id="edittitle"type="text">
+				<label for="editbox">正文</label><textarea id="editbox" ></textarea>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>

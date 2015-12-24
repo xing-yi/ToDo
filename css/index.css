@@ -1,0 +1,177 @@
+body,html,.g-container{
+	width: 100%;
+	height: 100%;
+	font-family:  'Microsoft YaHei';
+}
+.m-msg{
+	display: none;
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	/*opacity:0.6;*/
+}
+.m-msgbox{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	width: 400px;
+	height: 250px;
+	border: 1px solid #999;
+	background-color:#fff; 
+}
+.m-msgbox .u-close{
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	width: 18px; 
+	height: 18px;
+	background-position:-48px -1px; 
+
+	cursor: pointer;
+}
+.m-msgbox h3{
+	text-align: center;
+	font:26px/100px 'Microsoft YaHei';
+}
+.m-msgbox input{
+	margin:0 auto;
+	display: block;
+	width: 300px;
+	height:30px;
+}
+.m-msgbox button{
+	margin:0 auto;
+	margin-top: 20px;
+	display: block;
+	width: 100px;
+	height: 50px;
+	font: 20px/50px 'Microsoft YaHei';
+	background-color: #ddd;
+	border: 0;
+}
+.u-icon{
+	display: inline-block;
+	background: url(../image/sprite.png);
+}
+.g-container{
+	display: flex;
+	z-index: 1;
+	margin-right: -10px;
+	background-color: #eee;
+}
+.tri{
+	margin-right: 10px;
+	box-sizing:border-box;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.m-head{
+	height:20%;
+	line-height: 150px;
+	font-size: 30px;
+	text-align: center;
+}
+.m-content ul{
+	margin-left:20px; 
+}
+.m-content li{
+	font:20px/35px 'Microsoft YaHei';
+	cursor: pointer;
+}
+.m-content li:hover .u-delete{
+	display: inline-block;
+}
+.u-delete{
+	display: none;
+	margin-left:20px; 
+	width: 18px; 
+	height: 18px;
+	background-position:-48px -1px; 
+}
+
+.clearfix:after{
+	content:'.';
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+/* 笔记类型 */
+.g-notetype{
+	margin-right: 10px;
+	width: 200px;
+	height: 100%;
+}
+.g-notetype .m-content{
+	overflow:auto;
+}
+.g-notetype .u-add{
+	width: 17px;
+	height: 17px;
+	background-position: -2px -2px;
+}
+/* 笔记列表 */
+.g-notelist{
+	width: 320px;
+}
+.g-notelist h3,.g-notelist span{
+	display: inline-block;
+}
+.g-notelist span{
+	font-size: 25px;
+	margin-left:100px; 
+	cursor: pointer;
+}
+.g-notelist .u-write{
+	margin-right:10px; 
+	width: 19px;
+	height: 19px;
+	background-position: -25px -1px;
+}
+.g-notelist .m-content .box{
+	display: none;
+}
+.g-notelist .m-content .box:target{
+	display: block;
+}
+/* 编辑区域 */
+.g-edit{
+	height: 100%;
+	flex:1;
+}
+.g-edit .m-head{
+	text-align: right;
+}
+.g-edit span{
+	display: none;
+	font: 16px/50px 'Microsoft YaHei';
+	color: #f00;
+}
+.g-edit button{
+	width: 100px;
+	height: 50px;
+	margin-right:20px; 
+	font: 20px/50px 'Microsoft YaHei';
+	background-color: #ddd;
+	border: 0;
+}
+.g-edit .m-content{
+	width: 100%;
+	height: 80%;
+	font: 20px/40px 'Microsoft YaHei';
+}
+.g-edit .m-content input{
+	width: 99%;
+	height: 30px;
+}
+.g-edit #editbox{
+	width: 100%;
+	height: 60%;
+	box-sizing:border-box;
+	overflow: auto;
+	font: 16px/26px 'Microsoft YaHei';
+}
